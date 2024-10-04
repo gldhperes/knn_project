@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Carregar arquivos estáticos -->
+    {% load static %}
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+
+    <title>Previsão de Notas</title>
+
+
+</head>
+
+<body>
+    <section id="main_section">
+
+
+
+        <div id="predict_notes">
+            <div style="flex-flow: column">
+                <h1 id="main_title" class="txt_color_1">Prever Notas do Aluno</h1>
+                <h4 class="txt_color_1">Baseados em notas do enem 2023</h4>
+            </div>
+
+            <form id="predict_form" class="flex txt_color_2" method="post">
+                {% csrf_token %}
+                {{ form.as_p }} <!-- Renderiza o formulário como parágrafos -->
+                <button id="submit_btn" type="submit">Enviar</button>
+            </form>
+        </div>
+
+        {% if notas_preditas.all and best_recommendation %}
+        <div id="predicted" class="txt_color_1">
+            <h2>Notas previstas</h2>
+
+            <ul id="grade_list">
+                <li class="grade_li">
+                    <p class="materia">Matemática</p>
+                    <p class="nota">{{ nota_MT }}</p>
+                </li>
+
+                <li class="grade_li">
+                    <p class="materia"> Ciências da Natureza</p>
+                    <p class="nota">{{ nota_CN }}</p>
+                </li>
+
+                <li class="grade_li">
+                    <p class="materia"> Linguagens e Códigos </p>
+                    <p class="nota">{{ nota_LC }}</p>
+                </li>
+
+                <li class="grade_li">
+                    <p class="materia"> Ciências Humanas</p>
+                    <p class="nota">{{ nota_CH }}</p>
+                </li>
+
+                <li class="grade_li">
+                    <p class="materia">Redação</p>
+                    <p class="nota">{{ nota_RED }}</p>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+        <div id="close_neighbors">
+
+            <h2>Alunos similares</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+
+                        <th>Matemática</th>
+                        <th>Ciências da Natureza</th>
+                        <th>Linguagens e Códigos</th>
+                        <th>Ciências Humanas</th>
+                        <th>Redação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for notas in notas_vizinhos %}
+                    <tr class="txt_color_2">
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ notas.NU_NOTA_MT }}</td>
+                        <td>{{ notas.NU_NOTA_CN }}</td>
+                        <td>{{ notas.NU_NOTA_LC }}</td>
+                        <td>{{ notas.NU_NOTA_CH }}</td>
+                        <td>{{ notas.NU_NOTA_REDACAO }}</td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="recomendacao">
+            <h2>Recomendacaes</h2>
+            <p>
+                De acordo com as médias de notas de estudantes com caracteristicas similares, deve-se focar no estudo de
+                <span> {{ best_recommendation }}</span>
+            </p>
+        </div>
+        {% endif %}
+
+
+
+    </section>
+
+</body>
+
+</html>
