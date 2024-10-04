@@ -1,6 +1,5 @@
 # K-NN Project
-K-NN Project é um projeto baseado no algoritmo de filtragem colaborativa chamado "K-Nearest Neighbors" (K-NN) e em tradução livre "K vizinhos mais próximos".
-(EXPLICAR OQUE É K-NN)
+K-NN Project é um projeto baseado no algoritmo chamado "K-Nearest Neighbors" (K-NN) e em tradução livre "K vizinhos mais próximos". Esse algoritmo classifica ou faz previsões com base nos exemplos mais próximos (vizinhos) em um conjunto de dados. Ele compara a entrada com os K vizinhos mais próximos para determinar o resultado, seja uma classe (classificação) ou um valor (regressão).
 
 ## Objetivo
 Um algoritimo que preve a nota de um novo aluno no ENEM. A previsão são baseadas nas notas e nas características dos alunos que participaram do exame em anos anteriores.
