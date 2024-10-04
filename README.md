@@ -20,11 +20,11 @@ Os seguintes atributos dos microdados do ENEM serão utilizados para a previsão
   - Nota em Ciências Humanas e suas Tecnologias (NU_NOTA_CH)
   - Nota da Redação (NU_NOTA_RED)
 
- Informações Socioeconômicas:
-o Renda Familiar (Q006)
-o Escolaridade da Mãe (Q002)
-o Tipo de Escola (Pública ou Privada) (TP_ESCOLA)
-o Raça/Cor (TP_COR_RACA)
- Localidade:
-o Estado (SG_UF_RESIDENCIA)
-o Município (CO_MUNICIPIO_RESIDENCIA)
+- Informações Socioeconômicas:
+  - Renda Familiar (Q006)
+  - Escolaridade da Mãe (Q002)
+  - Tipo de Escola (Pública ou Privada) (TP_ESCOLA)
+  - Raça/Cor (TP_COR_RACA)
+  - Localidade:
+  - Estado (SG_UF_RESIDENCIA)
+  - Município (CO_MUNICIPIO_RESIDENCIA)
