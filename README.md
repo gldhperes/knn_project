@@ -1,4 +1,4 @@
-## K-NN Project
+# K-NN Project
 K-NN Project é um projeto baseado no algoritmo de filtragem colaborativa chamado "K-Nearest Neighbors" (K-NN) e em tradução livre "K vizinhos mais próximos".
 Construi o algoritimo usando Python juntamente com as bibliotecas scikit-learn para o uso do K-NN e pandas para a a leitura dos dados. Para o frontend, implementei o framework Django, proporcionando uma interface interativa.
 
@@ -28,3 +28,6 @@ Os seguintes atributos dos microdados do ENEM serão utilizados para a previsão
   - Localidade:
   - Estado (SG_UF_RESIDENCIA)
   - Município (CO_MUNICIPIO_RESIDENCIA)
+
+# Preparação para o Projeto
+## Extraindo os dados
