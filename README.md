@@ -4,7 +4,7 @@ K-NN Project é um projeto baseado no algoritmo de filtragem colaborativa chamad
 
 ## Objetivo
 Um algoritimo que preve a nota de um novo aluno no ENEM. A previsão são baseadas nas notas e nas características dos alunos que participaram do exame em anos anteriores.
-#### Importante resaltar que para simplificar o projeto e por questoes de precificação, decidi deixar o projeto rodando localmente, mas, deixei orientações para a quem quiser utilizar.
+#### Importante resaltar que para simplificar o projeto e por questões de precificação em servidores, decidi deixar o projeto rodando localmente.
 
 ## Modo de criação 
 Usando Python juntamente com as bibliotecas scikit-learn para o uso do K-NN e pandas para a a leitura dos dados. Para o frontend, o framework Django, proporcionando uma interface interativa.
