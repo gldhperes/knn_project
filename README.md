@@ -14,11 +14,11 @@ Os *Microdados do ENEM* estao disponiveis no site do INEP, pelo link: _https://w
 ## Atributos Relevantes:
 Os seguintes atributos dos microdados do ENEM serão utilizados para a previsão:
 - Notas nas Áreas do Conhecimento:
-  -- Nota em Matemática e suas Tecnologias (NU_NOTA_MT)
-o Nota em Ciências da Natureza e suas Tecnologias (NU_NOTA_CN)
-o Nota em Linguagens, Códigos e suas Tecnologias (NU_NOTA_LC)
-o Nota em Ciências Humanas e suas Tecnologias (NU_NOTA_CH)
-o Nota da Redação (NU_NOTA_RED)
+  - Nota em Matemática e suas Tecnologias (NU_NOTA_MT)
+  - Nota em Ciências da Natureza e suas Tecnologias (NU_NOTA_CN)
+  - Nota em Linguagens, Códigos e suas Tecnologias (NU_NOTA_LC)
+  - Nota em Ciências Humanas e suas Tecnologias (NU_NOTA_CH)
+  - Nota da Redação (NU_NOTA_RED)
 
  Informações Socioeconômicas:
 o Renda Familiar (Q006)
