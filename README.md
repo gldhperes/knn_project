@@ -9,6 +9,22 @@ Prever a nota de um novo aluno no ENEM. A previsão será baseada nas notas e na
 
 ## Base de dados pública
 Os *Microdados do ENEM* estao disponiveis no site do INEP, pelo link: _https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem_
-Em especifico usei somente a tabela de 2023: _https://download.inep.gov.br/microdados/microdados_enem_2023.zip_
+#### Em especifico usei somente a tabela de 2023.
 
-## Informações da tarefa
+## Atributos Relevantes:
+Os seguintes atributos dos microdados do ENEM serão utilizados para a previsão:
+- Notas nas Áreas do Conhecimento:
+  -- Nota em Matemática e suas Tecnologias (NU_NOTA_MT)
+o Nota em Ciências da Natureza e suas Tecnologias (NU_NOTA_CN)
+o Nota em Linguagens, Códigos e suas Tecnologias (NU_NOTA_LC)
+o Nota em Ciências Humanas e suas Tecnologias (NU_NOTA_CH)
+o Nota da Redação (NU_NOTA_RED)
+
+ Informações Socioeconômicas:
+o Renda Familiar (Q006)
+o Escolaridade da Mãe (Q002)
+o Tipo de Escola (Pública ou Privada) (TP_ESCOLA)
+o Raça/Cor (TP_COR_RACA)
+ Localidade:
+o Estado (SG_UF_RESIDENCIA)
+o Município (CO_MUNICIPIO_RESIDENCIA)
